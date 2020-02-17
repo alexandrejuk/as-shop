@@ -1,0 +1,38 @@
+@import '../../assets/css/colors.css';
+@import '../../assets/css/fonts.css';
+
+.button {
+  background-color: var(--color-invisible);
+  border: 2px solid var(--color-shark);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--color-shark);
+  cursor: pointer;
+  font-family: var(--font-default);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  outline: none;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.primary {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button:hover,
+.primary {
+  background-color: var(--color-shark);
+  color: var(--color-white);
+}
+
+.button:active,
+.primary:hover {
+  opacity: 0.9;
+}
+
+.primary:active {
+  opacity: 1;
+}
