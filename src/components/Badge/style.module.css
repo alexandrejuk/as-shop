@@ -1,0 +1,22 @@
+@import '../../assets/css/colors.css';
+@import '../../assets/css/fonts.css';
+
+.badge {
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--color-white);
+  font-family: var(--font-default);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 4px;
+  text-align: center;
+  width: 100px;
+}
+
+.danube {
+  background-color: var(--color-danube);
+}
+
+.chestnutRose {
+  background-color: var(--color-chestnut-rose);
+}
