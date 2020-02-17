@@ -1,0 +1,52 @@
+@import '../../assets/css/colors.css';
+@import '../../assets/css/fonts.css';
+
+.title {
+  color: var(--color-shark);
+  font-family: var(--font-default);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+  margin: 0;
+}
+
+.sourceCodePro {
+  font-family: var(--font-source-code);
+}
+
+.codGray {
+  color: var(--color-cod-gray);
+}
+
+.scorpion {
+  color: rgba(87, 87, 87, 0.87)
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.white {
+  color: var(--color-white)
+}
+
+.xsmall {
+  font-size: 14px;
+}
+
+.small {
+  font-size: 18px;
+}
+
+.medium {
+  font-size: 20px;
+}
+
+
+.big {
+  font-size: 24px;
+}
+
+.large {
+  font-size: 28px;
+}

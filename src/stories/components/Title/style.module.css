@@ -1,0 +1,10 @@
+@import '../../../assets/css/colors.css';
+
+.container {
+  background-color: var(--color-shark);
+  padding: 20px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 30px;
+}
