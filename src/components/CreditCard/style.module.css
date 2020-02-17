@@ -1,0 +1,33 @@
+@import '../../assets/css/colors.css';
+@import '../../assets/css/fonts.css';
+
+.creditCard {
+  background-color: var(--color-shark);
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--color-white);
+  height: 192px;
+  max-width: 320px;
+  padding: 20px 24px;
+}
+
+.cardNumber,
+.cardCreditInfo {
+  padding: 10px 0;
+}
+
+.cardCreditInfo {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chipIcon {
+  align-items: center;
+  display: flex;
+}
+
+.creditCardBrand {
+  text-align: right;
+  width: 100%;
+}
