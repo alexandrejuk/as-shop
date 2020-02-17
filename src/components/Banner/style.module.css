@@ -1,0 +1,9 @@
+.banner {
+  border-radius: 5px;
+  height: 158px;
+  overflow: hidden;
+}
+
+.image {
+  height: 100%;
+}
