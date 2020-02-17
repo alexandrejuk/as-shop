@@ -1,0 +1,10 @@
+@import '../../../assets/css/colors.css';
+
+.container {
+  background-color: var(--color-wild-sand);
+  height: 100vh;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 1px;
+}

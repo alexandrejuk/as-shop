@@ -1,0 +1,29 @@
+@import '../../../assets/css/colors.css';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imageWrapper {
+  width: 74px;
+  height: 74px;
+  border-radius: 5px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.image {
+  height: 100%;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
