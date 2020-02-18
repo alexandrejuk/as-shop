@@ -1,36 +1,54 @@
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
-import {
-  Badge,
-  Title,
-} from '../..'
+import { Title } from '../..'
 import styles from './style.module.css'
+import getInitiais from '../../../utils'
 
 const CardSeller = ({
   amount,
   data,
+  phone,
+  subtitle,
   title,
-  status,
 }) => {
   return (
     <div className={styles.content}>
-      <div className={styles.data}>
-        {data}
+      <div className={styles.avatar}>
+        {getInitiais(title)}
       </div>
       <div className={styles.infoWrapper}>
         <div className={styles.info}>
           <Title
             color="codGray"
             text={title}
-            size="medium"
+            size="small"
+          />
+          <div className={styles.contacts}>
+            <Title
+              color="scorpion"
+              text={subtitle}
+              size="xsmall"
+            />
+            <span className={styles.dotSeparator} />
+            <Title
+              color="scorpion"
+              text={phone}
+              size="xsmall"
+            />
+          </div>
+        </div>
+        <div className={styles.paymentData}>
+          <Title
+            color="codGray"
+            text={`R$ ${amount}`}
+            size="small"
           />
           <Title
             color="codGray"
-            text={amount}
-            size="medium"
+            text={data}
+            size="xsmall"
           />
         </div>
-        <Badge text={status} color="danube" />
       </div>
     </div>
   )
@@ -39,8 +57,9 @@ const CardSeller = ({
 CardSeller.propTypes = {
   amount: PropTypes.number.isRequired,
   data: PropTypes.string,
+  phone: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  status: PropTypes.string.isRequired,
 }
 
 export default memo(CardSeller)
