@@ -7,7 +7,7 @@ import {
 } from '../../components'
 import styles from './style.module.css'
 
-const title = 'vendeAI'
+const title = 'VENDEAI'
 const image = 'https://wallpaperaccess.com/full/171714.jpg'
 
 const Home = ({
