@@ -11,15 +11,18 @@ const CardProduct = ({
   subtitle,
   quantity,
 }) => {
-  const totalAmount = parserCurrentBR((quantity * amount))
+  const unitary = quantity || 1
+  const totalAmount = parserCurrentBR((unitary * amount))
   return (
     <Fragment>
-      <div className={styles.imageWrapper}>
-        <img
-          alt="list product"
-          className={styles.image}
-          src={image}
-        />
+      <div
+        className={styles.imageWrapper}
+        style={{
+          background: `url(${image})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
       </div>
       <div className={styles.content}>
         <Title
