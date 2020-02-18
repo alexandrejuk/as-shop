@@ -3,6 +3,7 @@
 .card {
   background-color: var(--color-white);
   box-sizing: border-box;
+  border-bottom: 2px solid var(--color-wild-sand);
   display: flex;
   height: 114px;
   padding: 20px;

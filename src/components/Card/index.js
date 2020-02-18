@@ -85,7 +85,7 @@ Card.default = {
   data: null,
   image: null,
   phone: null,
-  quantity: null,
+  quantity: 1,
   subtitle: null,
   status: null,
 }
