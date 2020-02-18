@@ -6,8 +6,9 @@
   font-family: var(--font-default);
   font-style: normal;
   font-weight: 500;
-  line-height: 23px;
+  line-height: 18px;
   margin: 0;
+  text-overflow: ellipsis;
 }
 
 .sourceCodePro {
@@ -31,22 +32,22 @@
 }
 
 .xsmall {
-  font-size: 14px;
+  font-size: 0.9em;
 }
 
 .small {
-  font-size: 18px;
+  font-size: 0.9em;
 }
 
 .medium {
-  font-size: 20px;
+  font-size: 1em;
 }
 
 
 .big {
-  font-size: 24px;
+  font-size: 1.1em;
 }
 
 .large {
-  font-size: 28px;
+  font-size: 1.2em;
 }

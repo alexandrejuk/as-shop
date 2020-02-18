@@ -10,23 +10,23 @@ export default {
 
 const titles = [
   {
-    text: 'Your small title here! 14px',
+    text: 'Your xsmall title here!',
     size: 'xsmall',
   },
   {
-    text: 'Your small title here! 18px',
+    text: 'Your small title here!',
     size: 'small',
   },
   {
-    text: 'Your medium title here! 20px',
+    text: 'Your medium title here!',
     size: 'medium',
   },
   {
-    text: 'Your big title here! 24px',
+    text: 'Your big title here!',
     size: 'big',
   },
   {
-    text: 'Your large title here! 28px',
+    text: 'Your large title here!',
     size: 'large',
   },
 ]
