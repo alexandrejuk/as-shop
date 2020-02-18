@@ -54,7 +54,10 @@ const Card = ({
 
 Card.propTypes = {
   action: PropTypes.func,
-  amount: PropTypes.string,
+  amount: PropTypes.oneOfType([
+    PropTypes.number.isRequired,
+    PropTypes.string.isRequired,
+  ]),
   data: PropTypes.string,
   id: PropTypes.oneOfType([
     PropTypes.number.isRequired,
@@ -62,7 +65,10 @@ Card.propTypes = {
   ]),
   image: PropTypes.string,
   phone: PropTypes.string,
-  quantity: PropTypes.string,
+  quantity: PropTypes.oneOfType([
+    PropTypes.number.isRequired,
+    PropTypes.string.isRequired,
+  ]),
   subtitle: PropTypes.string,
   status: PropTypes.string,
   title: PropTypes.string.isRequired,
