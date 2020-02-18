@@ -39,7 +39,7 @@ Title.propTypes = {
     PropTypes.string.isRequired,
   ]),
   type: PropTypes.oneOfType(['bold']),
-  size: PropTypes.oneOfType([
+  size: PropTypes.oneOf([
     'big',
     'large',
     'medium',
