@@ -2,7 +2,10 @@ import React, { memo } from 'react'
 import PropTypes from 'prop-types'
 import { Title } from '../..'
 import styles from './style.module.css'
-import getInitiais from '../../../utils'
+import {
+  getInitiais,
+  parserCurrentBR,
+} from '../../../utils'
 
 const CardSeller = ({
   amount,
@@ -40,7 +43,7 @@ const CardSeller = ({
         <div className={styles.paymentData}>
           <Title
             color="codGray"
-            text={`R$ ${amount}`}
+            text={parserCurrentBR(amount)}
             size="small"
           />
           <Title

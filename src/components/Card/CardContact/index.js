@@ -4,7 +4,7 @@ import {
   Title,
 } from '../..'
 import styles from './style.module.css'
-import getInitiais from '../../../utils'
+import { getInitiais } from '../../../utils'
 
 const CardContact = ({
   title,

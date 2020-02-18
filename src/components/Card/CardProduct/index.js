@@ -2,6 +2,7 @@ import React, { Fragment, memo } from 'react'
 import PropTypes from 'prop-types'
 import { Title } from '../../'
 import styles from './style.module.css'
+import { parserCurrentBR } from '../../../utils'
 
 const CardProduct = ({
   amount,
@@ -10,7 +11,7 @@ const CardProduct = ({
   subtitle,
   quantity,
 }) => {
-  const totalAmount = `R$ ${quantity * amount}`
+  const totalAmount = parserCurrentBR((quantity * amount))
   return (
     <Fragment>
       <div className={styles.imageWrapper}>
