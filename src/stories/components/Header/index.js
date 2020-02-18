@@ -5,7 +5,6 @@ import SettingsIcon from '../../../assets/icons/settings.svg'
 import SettingsWhiteIcon from '../../../assets/icons/settings-white.svg'
 
 import { Header } from '../../../components'
-import styles from './style.module.css'
 
 export default {
   title: 'Components/Header',
@@ -14,60 +13,48 @@ export default {
 const title = 'Alexandre'
 
 export const Default = () => (
-  <div className={styles.container}>
-    <Header
-      title={title}
-    />
-  </div>
+  <Header
+    title={title}
+  />
 )
 
 export const DefaultGoBack = () => (
-  <div className={styles.container}>
-    <Header
-      goBack={action('go back!')}
-      title={title}
-    />
-  </div>
+  <Header
+    goBack={action('go back!')}
+    title={title}
+  />
 )
 
 export const DefaultActions = () => (
-  <div className={styles.container}>
-    <Header
-      action={action('Action')}
-      actionIcon={SettingsIcon}
-      goBack={action('go back!')}
-      title={title}
-    />
-  </div>
+  <Header
+    action={action('Action')}
+    actionIcon={SettingsIcon}
+    goBack={action('go back!')}
+    title={title}
+  />
 )
 
 export const Primary = () => (
-  <div className={styles.container}>
-    <Header
-      color="primary"
-      title={title}
-    />
-  </div>
+  <Header
+    color="primary"
+    title={title}
+  />
 )
 
 export const PrimaryGoBack = () => (
-  <div className={styles.container}>
-    <Header
-      color="primary"
-      goBack={action('go back!')}
-      title={title}
-    />
-  </div>
+  <Header
+    color="primary"
+    goBack={action('go back!')}
+    title={title}
+  />
 )
 
 export const PrimaryActions = () => (
-  <div className={styles.container}>
-    <Header
-      action={action('Action')}
-      actionIcon={SettingsWhiteIcon}
-      color="primary"
-      goBack={action('go back!')}
-      title={title}
-    />
-  </div>
+  <Header
+    action={action('Action')}
+    actionIcon={SettingsWhiteIcon}
+    color="primary"
+    goBack={action('go back!')}
+    title={title}
+  />
 )
