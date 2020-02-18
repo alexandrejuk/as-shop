@@ -34,7 +34,10 @@ Title.propTypes = {
     'white',
   ]),
   font: PropTypes.oneOfType(['sourceCodePro']),
-  text: PropTypes.string.isRequired,
+  text: PropTypes.oneOfType([
+    PropTypes.number.isRequired,
+    PropTypes.string.isRequired,
+  ]),
   type: PropTypes.oneOfType(['bold']),
   size: PropTypes.oneOfType([
     'big',
