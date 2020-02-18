@@ -15,6 +15,7 @@ const badges = [
 const badge = color => (
   <div className={styles.item}>
     <Badge
+      key={color}
       color={color}
       text="text"
     />
