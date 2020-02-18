@@ -23,7 +23,7 @@ const Header = ({
   const titleColor = (
     color === 'primary'
       ? 'white'
-      : 'shark'
+      : 'codGray'
   )
 
   const IconGoBack = (
@@ -76,6 +76,7 @@ const Header = ({
 
 Header.propTypes = {
   action: PropTypes.func,
+  actionIcon: PropTypes.string,
   color: PropTypes.oneOf([
     'default',
     'primary',
