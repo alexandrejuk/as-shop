@@ -1,0 +1,76 @@
+@import '../../assets/css/colors.css';
+
+.main {
+  background-color: var(--color-wild-sand);
+  height: 100vh;
+}
+
+.container {
+  padding: 1px 20px;
+}
+
+.sectionProduct {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-wild-sand);
+  margin-top: 1px;
+  margin-bottom: 4px;
+  padding: 20px 0;
+  padding-bottom: 15px;
+}
+
+.actionButton {
+  padding: 20px;
+}
+
+.productTitle {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productDescription {
+  height: auto;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.imageWrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productImage {
+  height: 92px;
+  width: 92px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.imageSlider img,
+.imageWrapper img {
+  height: 100%;
+}
+
+.imageSlider {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 274px;
+  margin: 22px 0;
+}
+
+.slider {
+  margin: auto;
+  min-width: 300px;
+  max-width: 320px;
+}
+
+@media screen and (min-width: 360px) {
+  .productTitle,
+  .sectionProduct {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
