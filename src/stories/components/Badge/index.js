@@ -13,9 +13,11 @@ const badges = [
 ]
 
 const badge = color => (
-  <div className={styles.item}>
+  <div
+    className={styles.item}
+    key={color}
+  >
     <Badge
-      key={color}
       color={color}
       text="text"
     />
