@@ -1,0 +1,11 @@
+@import '../../../assets/css/colors.css';
+
+.listContent {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listInfo {
+  padding-left: 30px;
+}

@@ -7,6 +7,8 @@ import CardProduct from './Card/CardProduct'
 import CardSeller from './Card/CardSeller'
 import CreditCard from './CreditCard'
 import Header from './Header'
+import List from './List'
+import ListItem from './List/ListItem'
 import Title from './Title'
 
 export {
@@ -19,5 +21,7 @@ export {
   CardSeller,
   CreditCard,
   Header,
+  List,
+  ListItem,
   Title,
 }
