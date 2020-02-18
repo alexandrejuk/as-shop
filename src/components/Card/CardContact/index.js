@@ -4,21 +4,17 @@ import {
   Title,
 } from '../..'
 import styles from './style.module.css'
+import getInitiais from '../../../utils'
 
 const CardContact = ({
   title,
   subtitle,
   phone,
 }) => {
-  const parsrInitials = title.match(/\b\w/g) || []
-  const initials = (
-    (parsrInitials.shift() || '')
-    + (parsrInitials.pop() || '')
-  ).toUpperCase()
   return (
     <div className={styles.content}>
       <div className={styles.avatar}>
-        {initials}
+        {getInitiais(title)}
       </div>
       <div className={styles.infoWrapper}>
         <div className={styles.info}>
