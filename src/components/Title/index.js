@@ -28,7 +28,7 @@ const Title = ({
 }
 
 Title.propTypes = {
-  color: PropTypes.oneOfType([
+  color: PropTypes.oneOf([
     'codGray',
     'scorpion',
     'white',
