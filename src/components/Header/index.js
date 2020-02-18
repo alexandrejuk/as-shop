@@ -8,7 +8,6 @@ import ArrowWhiteIcon from '../../assets/icons/arrow-white.svg'
 
 import styles from './style.module.css'
 
-
 const Header = ({
   actionIcon,
   action,
