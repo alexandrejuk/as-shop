@@ -9,9 +9,10 @@ const List = ({
 }) => {
   return (
     <div className={styles.list}>
-      {items.map(item => (
+      {items.map((item, index) => (
         <div
           className={styles.listItem}
+          key={index}
           onClick={action}
         >
           <ListItem {...item} />
