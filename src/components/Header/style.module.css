@@ -1,0 +1,41 @@
+@import '../../assets/css/colors.css';
+
+.header {
+  align-items: center;
+  background-color: var(--color-white);
+  box-sizing: border-box;
+  display: flex;
+  height: 74px;
+  justify-content: space-between;
+  padding: 24px 20px;
+}
+
+.headerTitle,
+.leftAction,
+.rightAction {
+  flex: 1;
+}
+
+.headerTitle {
+  text-align: center;
+}
+
+.arrow,
+.iconAction {
+  background-color: var(--color-invisible);
+  border: none;
+}
+
+.arrow:active,
+.arrow:focus {
+  outline: none;
+}
+
+.rightAction {
+  text-align: right;
+}
+
+.primary {
+  background-color: var(--color-shark);
+  color: var(--color-white);
+}
