@@ -1,0 +1,18 @@
+@import '../../assets/css/colors.css';
+
+.main {
+  background-color: var(--color-wild-sand);
+  height: 100vh;
+}
+
+.container {
+  padding: 1px 20px;
+}
+
+.sectionBanner {
+  background-color: var(--color-white);
+  margin-top: 1px;
+  margin-bottom: 4px;
+  padding: 20px;
+  padding-bottom: 15px;
+}
