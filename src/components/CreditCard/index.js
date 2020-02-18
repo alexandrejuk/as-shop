@@ -1,8 +1,8 @@
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
 import { Title } from '../'
-import ChipIcon from '../../assets/images/icons/chip.png'
-import TagIcon from  '../../assets/images/icons/tag.png'
+import ChipIcon from '../../assets/icons/chip.png'
+import TagIcon from  '../../assets/icons/tag.png'
 import styles from './style.module.css'
 
 const defaultValueCredidCard = {
