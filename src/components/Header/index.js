@@ -40,9 +40,9 @@ const Header = ({
           >
             <img
               alt="arrow left"
-              height={24}
+              height={18}
               src={IconGoBack}
-              width={24}
+              width={18}
             />
           </button>
         )}
@@ -51,7 +51,8 @@ const Header = ({
         <Title
           color={titleColor}
           text={title}
-          size="medium"
+          size="small"
+          type="bold"
         />
       </div>
       <div className={styles.rightAction}>
@@ -62,9 +63,9 @@ const Header = ({
           >
             <img
               alt="settings"
-              height={24}
+              height={18}
               src={actionIcon}
-              width={24}
+              width={18}
             />
           </button>
         )}
