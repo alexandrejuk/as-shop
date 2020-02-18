@@ -1,10 +1,22 @@
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
 import {
+  CardContact,
   CardProduct,
   CardSeller,
 } from '../'
 import styles from './style.module.css'
+
+const chooseCard = type => {
+  switch (type) {
+    case 'product':
+      return CardProduct
+    case 'contact':
+      return CardContact
+    default:
+      return CardSeller
+  }
+}
 
 const Card = ({
   action,
@@ -12,19 +24,15 @@ const Card = ({
   data,
   id,
   image,
-  title,
+  phone,
+  quantity,
   subtitle,
   status,
-  quantity,
+  title,
   type,
 }) => {
   const onClick = value => () => action(value)
-  const CardComponent = (
-    type === 'product'
-     ? CardProduct
-     : CardSeller
-  )
-
+  const CardComponent = chooseCard(type)
   return (
     <div
       onClick={onClick(id)}
@@ -34,10 +42,11 @@ const Card = ({
         amount={amount}
         data={data}
         image={image}
-        title={title}
+        phone={phone}
+        quantity={quantity}
         subtitle={subtitle}
         status={status}
-        quantity={quantity}
+        title={title}
       />
     </div>
   )
@@ -47,16 +56,21 @@ Card.propTypes = {
   action: PropTypes.func,
   amount: PropTypes.string,
   data: PropTypes.string,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.oneOfType([
+    PropTypes.number.isRequired,
+    PropTypes.string.isRequired,
+  ]),
   image: PropTypes.string,
+  phone: PropTypes.string,
+  quantity: PropTypes.string,
+  subtitle: PropTypes.string,
+  status: PropTypes.string,
   title: PropTypes.string.isRequired,
   type: PropTypes.oneOf([
+    'contact',
     'product',
     'seller',
   ]).isRequired,
-  subtitle: PropTypes.string,
-  status: PropTypes.string,
-  quantity: PropTypes.string,
 }
 
 Card.default = {
@@ -64,8 +78,9 @@ Card.default = {
   amount: null,
   data: null,
   image: null,
-  subtitle: null,
+  phone: null,
   quantity: null,
+  subtitle: null,
   status: null,
 }
 

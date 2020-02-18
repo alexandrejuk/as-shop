@@ -18,7 +18,8 @@ const itemList = {
   quantity: 10,
   subtitle:"Lorem Ipsum is simply dummy text of the printing and typesetting industry",
   status: "PAGO",
-  data: "10 jan"
+  data: "10 jan",
+  phone: "(11) 9 6503-5205",
 }
 
 const lists = range(1, 5).map(item => ({
@@ -38,10 +39,31 @@ const item = item => (
   </div>
 )
 
+const itemType = type => item => ({
+  ...item,
+  type,
+  subtitle: 'São Paulo - SP',
+})
+
+
+export const Contact = () => (
+  <div className={styles.container}>
+    {
+      map(
+        item,
+        map(
+          itemType('contact'),
+          lists,
+        ),
+      )
+    }
+  </div>
+)
+
 export const Product = () => (
   <div className={styles.container}>
     {
-      map(item, map(item => ({...item, type: 'product'}), lists))
+      map(item, map(itemType('product'), lists))
     }
   </div>
 )
@@ -49,7 +71,7 @@ export const Product = () => (
 export const Seller = () => (
   <div className={styles.container}>
     {
-      map(item, map(item => ({...item, type: 'seller'}), lists))
+      map(item, map(itemType('seller'), lists))
     }
   </div>
 )

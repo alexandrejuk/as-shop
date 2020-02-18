@@ -1,0 +1,55 @@
+@import '../../../assets/css/colors.css';
+@import '../../../assets/css/fonts.css';
+
+.content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.avatar {
+  background-color: var(--color-shark);
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-default);
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: center;
+  height: 60px;
+  margin-right: 20px;
+  text-align: center;
+  width: 60px;
+}
+
+.infoWrapper,
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.infoWrapper {
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+}
+
+.info:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.dotSeparator {
+  content: '';
+  height: 5px;
+  margin: 0 10px;
+  width: 5px;
+}
