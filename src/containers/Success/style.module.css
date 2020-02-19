@@ -1,0 +1,27 @@
+@import '../../assets/css/colors.css';
+
+.container {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.title {
+  padding: 10px 0;
+}
+
+.successImage {
+  margin: auto;
+  margin-top: 10px;
+  overflow: hidden;
+  width: 100%;
+  min-width: 280px;
+  max-width: 475px;
+}
+
+.successImage img {
+  width: 100%;
+}
+
+.buttonAction {
+  margin-top: 50px;
+}
