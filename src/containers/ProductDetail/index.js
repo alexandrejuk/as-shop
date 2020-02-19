@@ -51,8 +51,11 @@ const ProductDetail = ({
             <img src={images[0]} alt="product" />
           </div>
           <div className={styles.imageWrapper}>
-            {images.map(image => (
-              <div className={styles.productImage}>
+            {images.map((image, index) => (
+              <div
+                className={styles.productImage}
+                key={index}
+              >
                 <img src={image} alt="product" />
               </div>
             ))}

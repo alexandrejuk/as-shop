@@ -20,6 +20,7 @@
 
 .actionButton {
   padding: 20px;
+  background-color: var(--color-wild-sand);
 }
 
 .productTitle {
